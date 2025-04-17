@@ -80,26 +80,26 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(nextTestimonial, 5000);
     }
     // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            // Simple validation
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields.');
-                return;
+    // const contactForm = document.getElementById('contactForm');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function (e) {
+    //         e.preventDefault();
+    //         // Get form values
+    //         const name = document.getElementById('name').value;
+    //         const email = document.getElementById('email').value;
+    //         const message = document.getElementById('message').value;
+    //         // Simple validation
+    //         if (!name || !email || !message) {
+    //             alert('Please fill in all required fields.');
+    //             return;
 
-            }
-            // Here you would typically send the form data to a server
-            // For this example, we'll just show a success message
-            alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon.`);
-            contactForm.reset();
-        });
-    }
+    //         }
+    //         // Here you would typically send the form data to a server
+    //         // For this example, we'll just show a success message
+    //         alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon.`);
+    //         contactForm.reset();
+    //     });
+    // }
     // Mobile menu toggle
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarNav = document.querySelector('.navbar-collapse');
