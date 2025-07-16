@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -88,6 +89,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen">
           {children}
+          <Analytics />
         </main>
         <Footer />
       </body>
