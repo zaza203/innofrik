@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Privacy Policy – Innofrik',
+    title: 'Privacy Policy | Innofrik',
     description:
       'Read how Innofrik protects your data and privacy while using our services and website.',
     images: ['/icons/innofrik.svg'],
