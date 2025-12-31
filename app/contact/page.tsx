@@ -1,47 +1,50 @@
-import ContactPage from './ContactPage'
+import ContactPage from './ContactPage';
+import { Metadata } from 'next';
 
-export async function generateMetadata() {
-  return {
-    title: 'Contact Us – Innofrik',
+export const metadata: Metadata = {
+  title: 'Contact Us - Get a Free IT Outsourcing Consultation',
+  description:
+    'Contact Innofrik for a free consultation on IT outsourcing, dedicated development teams, and custom software projects. Get a detailed project estimate within 24 hours.',
+  keywords: [
+    'contact Innofrik',
+    'IT outsourcing consultation',
+    'hire dedicated developers',
+    'software development quote',
+    'offshore development inquiry',
+    'outsourcing project estimate',
+    'free tech consultation',
+    'hire remote developers',
+    'custom software quote',
+    'development team inquiry',
+  ],
+  openGraph: {
+    title: 'Contact Innofrik - Start Your IT Outsourcing Project',
     description:
-      'Get in touch with Innofrik for free consultation, project proposals, and expert digital services.',
-    keywords: [
-      'Innofrik',
-      'Contact',
-      'Consultation',
-      'Project Proposal',
-      'Digital Services',
-      'Web Development',
-      'Mobile Apps',
-      'UI/UX Design',
-      'DevOps',
-      'Data Engineering',
+      'Get a free consultation and project estimate within 24 hours. Start building your dedicated development team today.',
+    url: 'https://innofrik.site/contact',
+    siteName: 'Innofrik',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Innofrik',
+      },
     ],
-    openGraph: {
-      title: 'Contact Innofrik – Start Your Next Project',
-      description:
-        'Reach out to Innofrik’s expert team for a free consultation and detailed project proposal.',
-      url: 'https://www.innofrik.site/contact',
-      siteName: 'Innofrik',
-      images: [
-        {
-          url: '/icons/innofrik.svg',
-          width: 600,
-          height: 600,
-          alt: 'Innofrik Logo',
-        },
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Contact Innofrik – Start Your Next Project',
-      description:
-        'Reach out for a free consultation and detailed project proposal from Innofrik’s expert team.',
-      images: ['/icons/innofrik.svg'],
-    },
-  };
-}
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Innofrik - Free IT Outsourcing Consultation',
+    description:
+      'Get a free consultation and project estimate within 24 hours. Build your dedicated team today.',
+    images: ['/og-image.png'],
+  },
+  alternates: {
+    canonical: 'https://innofrik.site/contact',
+  },
+};
 
 export default function Page() {
   return <ContactPage />;

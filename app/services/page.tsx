@@ -1,50 +1,57 @@
-import ServicesPage from './ServicesPage'
+import ServicesPage from './ServicesPage';
+import { Metadata } from 'next';
 
-export async function generateMetadata() {
-  return {
-    title: 'Our Services – Innofrik',
+export const metadata: Metadata = {
+  title: 'IT Outsourcing Services - Dedicated Teams & Custom Development',
+  description:
+    'Explore Innofrik\'s comprehensive IT outsourcing services: dedicated development teams, custom software development, mobile apps, cloud & DevOps, UI/UX design, and more. Save up to 60% on development costs.',
+  keywords: [
+    'IT outsourcing services',
+    'dedicated development teams',
+    'custom software development',
+    'staff augmentation services',
+    'offshore development services',
+    'mobile app development',
+    'web application development',
+    'cloud and DevOps services',
+    'UI/UX design services',
+    'QA testing outsourcing',
+    'AI and machine learning services',
+    'React development company',
+    'Node.js development',
+    'Python development services',
+    'software development outsourcing',
+  ],
+  authors: [{ name: 'Innofrik', url: 'https://innofrik.site' }],
+  openGraph: {
+    title: 'IT Outsourcing Services - Innofrik',
     description:
-      'Discover Innofrik’s professional services including Web Development, Mobile App Development, UI/UX Design, SEO & Marketing, DevOps, and Cybersecurity tailored to grow your business.',
-    keywords: [
-      'web development',
-      'mobile app development',
-      'UI UX design',
-      'SEO marketing',
-      'DevOps',
-      'cloud setup',
-      'cybersecurity',
-      'Innofrik',
-      'digital services',
-      'software development',
+      'Full-service IT outsourcing: dedicated teams, custom software, mobile apps, cloud solutions. Reduce costs by 60% with our offshore development center.',
+    url: 'https://innofrik.site/services',
+    siteName: 'Innofrik',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Innofrik IT Outsourcing Services',
+      },
     ],
-    authors: [{ name: 'Innofrik', url: 'https://innofrik.site' }],
-    openGraph: {
-      title: 'Our Services – Innofrik',
-      description:
-        'Discover Innofrik’s professional digital services to grow your business online.',
-      url: 'https://innofrik.site/services',
-      siteName: 'Innofrik',
-      images: [
-        {
-          url: 'https://innofrik.site/icons/innofrik.svg',
-          width: 1200,
-          height: 630,
-          alt: 'Innofrik Services',
-        },
-      ],
-      locale: 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Our Services – Innofrik',
-      description:
-        'Explore Innofrik’s range of digital services including web, mobile, design, marketing, and more.',
-      images: ['https://innofrik.site/icons/innofrik.svg'],
-      creator: '@innofrik',
-    },
-  };
-}
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IT Outsourcing Services - Innofrik',
+    description:
+      'Dedicated development teams, custom software, mobile apps & more. Save 60% on development costs.',
+    images: ['/og-image.png'],
+    creator: '@innofrik',
+  },
+  alternates: {
+    canonical: 'https://innofrik.site/services',
+  },
+};
 
 export default function Page() {
   return <ServicesPage />;
