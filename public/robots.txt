@@ -1,6 +1,17 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
 
 # Host
 Host: https://innofrik.site
