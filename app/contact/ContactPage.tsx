@@ -97,7 +97,7 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-semibold mb-2">Call Us</h3>
-                <p className="text-gray-600 text-sm">+1 (516) 218-6691</p>
+                <p className="text-gray-600 text-sm">+1 (516) 218-6691 (WhatsApp or Telegram)</p>
                 <p className="text-gray-600 text-sm">+237 691 71 58 66</p>
               </CardContent>
             </Card>

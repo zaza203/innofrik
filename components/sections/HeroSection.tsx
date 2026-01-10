@@ -174,7 +174,7 @@ export default function HeroSection() {
               </Button>
               <Button
                 size="lg"
-                variant="outline"
+                variant="default"
                 className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10 transition-all duration-300"
                 asChild
               >

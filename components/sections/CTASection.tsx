@@ -79,7 +79,7 @@ export default function CTASection() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
+              variant="default"
               className="text-lg px-8 py-6 border-gray-600 text-white hover:bg-white/10"
               asChild
             >

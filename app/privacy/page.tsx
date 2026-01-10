@@ -172,7 +172,7 @@ export default function PrivacyPage() {
             </p>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700"><strong>Email:</strong> info@innofrik.com</p>
-              <p className="text-gray-700"><strong>Phone:</strong> +1 (516) 218-6691 / +237 691 71 58 66</p>
+              <p className="text-gray-700"><strong>Phone:</strong> +1 (516) 218-6691 (WhatsApp or Telegram) / +237 691 71 58 66</p>
               <p className="text-gray-700"><strong>Address:</strong> Molyko Buea, Cameroon</p>
             </div>
           </section>

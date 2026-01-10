@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Github, Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Github, Mail, Phone, MapPin, ArrowRight} from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
@@ -98,7 +98,9 @@ export default function Footer() {
                 <span>info@innofrik.com</span>
               </a>
               <a
-                href="tel:+15162186691"
+                href="https://wa.me/15162186691?text=Hello%20I%20would%20like%20to%20contact%20you"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors"
               >
                 <Phone className="h-5 w-5" />
